@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | [Your Name]</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --accent-blue: #38bdf8;
+            --accent-purple: #818cf8;
+            --text-main: #f1f5f9;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            background-image: radial-gradient(circle at 50% 0%, #1e293b 0%, #0f172a 100%);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 40px auto;
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, var(--accent-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: var(--text-dim);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent-blue);
+            margin-top: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent-purple);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--accent-blue);
+        }
+
+        .discord-area {
+            margin-top: 30px;
+            padding: 15px;
+            background: rgba(88, 101, 242, 0.1);
+            border: 1px dashed #5865f2;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .discord-tag {
+            font-family: monospace;
+            font-weight: bold;
+            color: #5865f2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Hello, I'm [Your Name]</h1>
+    <p class="subtitle">Developer & Systems Administrator</p>
+
+    <p>I specialize in building immersive digital experiences and high-performance hosting solutions. My work sits at the intersection of web development, game server administration, and custom software integration.</p>
+
+    <h2>Technical Expertise</h2>
+    <div class="grid">
+        <div class="card">
+            <strong>Web & Systems</strong>
+            <p>SaaS-style aesthetics, glassmorphism, and high-uptime VPS configurations for TurboV Hosting.</p>
+        </div>
+        <div class="card">
+            <strong>Gaming & Modding</strong>
+            <p>FiveM community infrastructure, Lua/HTML integration, and custom Python automation tools.</p>
+        </div>
+    </div>
+
+    <h2>Current Projects</h2>
+    <ul>
+        <li><strong>TurboV Hosting:</strong> Engineering a streamlined, multi-page web presence for scalable hosting.</li>
+        <li><strong>Texas State Roleplay:</strong> Leading technical efforts for community infrastructure and staff management.</li>
+        <li><strong>VRChat Tooling:</strong> Developing Python-based OSC scripts for real-time data transmission.</li>
+    </ul>
+
+    <div class="discord-area">
+        Reach out via Discord: <span class="discord-tag">@YourUsername</span>
+    </div>
+</div>
+
+</body>
+</html>
