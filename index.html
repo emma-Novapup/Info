@@ -11,6 +11,7 @@
             --card-bg: rgba(255, 255, 255, 0.05);
             --accent-primary: #6366f1;
             --accent-secondary: #a855f7;
+            --accent-furry: #ff79c6;
             --text-main: #f8fafc;
             --text-dim: #94a3b8;
         }
@@ -126,6 +127,7 @@
             display: flex;
             justify-content: center;
             gap: 15px;
+            flex-wrap: wrap;
         }
 
         .btn {
@@ -159,9 +161,22 @@
             box-shadow: 0 0 20px rgba(88, 101, 242, 0.4);
         }
 
+        .btn-furry {
+            background: rgba(255, 121, 198, 0.1);
+            color: var(--accent-furry);
+            border: 1px solid var(--accent-furry);
+        }
+
+        .btn-furry:hover {
+            background: var(--accent-furry);
+            color: white;
+            box-shadow: 0 0 20px rgba(255, 121, 198, 0.4);
+        }
+
         @media (max-width: 600px) {
             .grid { grid-template-columns: 1fr; }
             h1 { font-size: 2rem; }
+            .social-links { flex-direction: column; }
         }
     </style>
 </head>
@@ -193,12 +208,15 @@
         </div>
 
         <div class="social-links">
-            <a href="https://github.com" class="btn btn-primary">
-                <i class="fab fa-github"></i> GitHub
+            <a href="https://www.turbov.dev/" class="btn btn-primary">
+                <i class="fas fa-server"></i> TurboV
             </a>
             <div class="btn btn-discord">
                 <i class="fab fa-discord"></i> yaknow14
             </div>
+            <a href="furry.html" class="btn btn-furry">
+                <i class="fas fa-paw"></i> Fursona
+            </a>
         </div>
     </div>
 </div>
