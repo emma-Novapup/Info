@@ -86,17 +86,27 @@
         }
 
         .avatar {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             margin: 0 auto 20px;
             background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
             display: flex;
             align-items: center;
             justify-content: center;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            overflow: hidden; /* Ensures the image stays circular */
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .avatar i {
             font-size: 2.5rem;
             color: white;
-            border: 3px solid rgba(255, 255, 255, 0.1);
         }
 
         .species-tag {
@@ -158,7 +168,9 @@
     <div class="sona-grid">
         <!-- Fursona 1 -->
         <div class="profile-card">
-            <div class="avatar"><i class="fas fa-paw"></i></div>
+            <div class="avatar">
+                <img src="fursona1.png" alt="Novabeast Character">
+            </div>
             <h2>just a novabeast</h2>
             <p class="species-tag">Novabeast</p>
             <p class="bio">
