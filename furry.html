@@ -53,7 +53,7 @@
             -webkit-text-fill-color: transparent;
         }
 
-        .tagline {
+        .header-tagline {
             color: var(--accent-primary);
             font-weight: 500;
             letter-spacing: 1px;
@@ -62,7 +62,6 @@
             margin-bottom: 24px;
         }
 
-        /* Grid for multiple Fursonas */
         .sona-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -100,27 +99,19 @@
             border: 3px solid rgba(255, 255, 255, 0.1);
         }
 
+        .species-tag {
+            color: var(--accent-primary);
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+        }
+
         .bio {
             color: var(--text-dim);
             line-height: 1.6;
-            margin-bottom: 24px;
             font-size: 1rem;
-        }
-
-        .traits-list {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .trait-tag {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            padding: 6px 12px;
-            font-size: 0.8rem;
-            color: var(--text-main);
         }
 
         .social-links {
@@ -161,7 +152,7 @@
 <div class="container">
     <div class="header-section">
         <h1>My Fursonas</h1>
-        <p class="tagline">Personal Characters & Designs</p>
+        <p class="header-tagline">Personal Characters & Designs</p>
     </div>
 
     <div class="sona-grid">
@@ -169,30 +160,20 @@
         <div class="profile-card">
             <div class="avatar"><i class="fas fa-paw"></i></div>
             <h2>Nova</h2>
-            <p class="tagline" style="margin-bottom: 15px;">Species Name</p>
+            <p class="species-tag">Novabeast</p>
             <p class="bio">
                 A character defined by vibrant colors and a friendly, energetic personality. Nova is often found exploring nature or relaxing in quiet, sunlit clearings.
             </p>
-            <div class="traits-list">
-                <span class="trait-tag">Friendly</span>
-                <span class="trait-tag">Energetic</span>
-                <span class="trait-tag">Nature-lover</span>
-            </div>
         </div>
 
         <!-- Fursona 2 -->
         <div class="profile-card">
             <div class="avatar"><i class="fas fa-moon"></i></div>
             <h2>Lunar</h2>
-            <p class="tagline" style="margin-bottom: 15px;">Species Name</p>
+            <p class="species-tag">Species Name</p>
             <p class="bio">
                 Calm and analytical, Lunar represents the quieter side of things. Prefers the night sky and usually stays observant in social situations.
             </p>
-            <div class="traits-list">
-                <span class="trait-tag">Calm</span>
-                <span class="trait-tag">Observant</span>
-                <span class="trait-tag">Nocturnal</span>
-            </div>
         </div>
     </div>
 
